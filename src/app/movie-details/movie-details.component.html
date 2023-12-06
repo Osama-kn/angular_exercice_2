@@ -1,0 +1,5 @@
+<div *ngIf="movieDetails">
+    <h2>{{ movieDetails.title }}</h2>
+    <p>{{ movieDetails.overview }}</p>
+    <button (click)="toggleLike(movieDetails)">Like</button>
+  </div>

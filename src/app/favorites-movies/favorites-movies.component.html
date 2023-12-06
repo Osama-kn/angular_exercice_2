@@ -1,0 +1,8 @@
+<div *ngIf="favorites.length > 0">
+    <h2>Favorite list</h2>
+    <ul>
+      <li *ngFor="let movie of favorites" [routerLink]="['/movie/',movie?.id]">
+        {{ movie.title }}
+      </li>
+    </ul>
+  </div>
